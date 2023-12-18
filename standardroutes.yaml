@@ -1,0 +1,293 @@
+- id: s1
+  route:
+  - from: Rome
+    mercandise:
+      Apples: &id006 !!python/object/apply:numpy.core.multiarray.scalar
+      - &id001 !!python/object/apply:numpy.dtype
+        args:
+        - i4
+        - false
+        - true
+        state: !!python/tuple
+        - 3
+        - <
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 0
+      - !!binary |
+        AgAAAA==
+      Beer: &id004 !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        BgAAAA==
+      Bread: &id003 !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        CAAAAA==
+      Cheese: &id002 !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        BAAAAA==
+      Milk: &id005 !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        CgAAAA==
+    to: Venezia
+  - from: Venezia
+    mercandise:
+      Apples: *id002
+      Bananas: *id002
+      Beer: *id003
+      Cheese: *id004
+      Milk: *id004
+    to: Trento
+  - from: Trento
+    mercandise:
+      Apples: *id003
+      Bananas: *id005
+      Bread: *id002
+      Cheese: *id006
+      Milk: *id004
+    to: Verona
+  - from: Verona
+    mercandise:
+      Apples: *id004
+      Beer: *id002
+      Bread: *id005
+    to: Milano
+- id: s2
+  route:
+  - from: Trento
+    mercandise:
+      Apples: *id005
+      Bananas: *id006
+      Bread: *id006
+      Cheese: *id002
+      Milk: *id006
+    to: Milano
+  - from: Milano
+    mercandise:
+      Apples: *id004
+      Bananas: *id004
+      Beer: *id002
+      Bread: *id006
+      Cheese: *id005
+      Milk: *id004
+    to: Rome
+  - from: Rome
+    mercandise:
+      Apples: *id004
+      Bananas: *id005
+      Beer: *id003
+      Bread: *id005
+      Cheese: *id005
+      Milk: *id004
+    to: Verona
+  - from: Verona
+    mercandise:
+      Bananas: *id006
+      Bread: *id005
+      Cheese: *id002
+    to: Venezia
+- id: s3
+  route:
+  - from: Verona
+    mercandise:
+      Apples: *id003
+      Bananas: *id002
+      Beer: *id002
+      Bread: *id003
+      Cheese: *id003
+      Milk: *id005
+    to: Rome
+  - from: Rome
+    mercandise:
+      Apples: *id003
+      Bananas: *id004
+      Beer: *id006
+      Bread: *id006
+      Cheese: *id004
+      Milk: *id004
+    to: Trento
+  - from: Trento
+    mercandise:
+      Bananas: *id002
+      Bread: *id004
+      Milk: *id006
+    to: Milano
+- id: s4
+  route:
+  - from: Venezia
+    mercandise:
+      Apples: *id004
+      Bananas: *id004
+      Bread: *id004
+      Cheese: *id004
+      Milk: *id005
+    to: Milano
+  - from: Milano
+    mercandise:
+      Apples: *id004
+      Bananas: *id005
+      Bread: *id003
+      Cheese: *id002
+      Milk: *id005
+    to: Trento
+- id: s5
+  route:
+  - from: Milano
+    mercandise:
+      Bananas: *id003
+      Beer: *id003
+      Milk: *id003
+    to: Trento
+  - from: Trento
+    mercandise:
+      Apples: *id003
+      Bananas: *id002
+      Beer: *id004
+      Bread: *id003
+      Cheese: *id006
+      Milk: *id002
+    to: Verona
+  - from: Verona
+    mercandise:
+      Bananas: *id005
+      Beer: *id003
+      Bread: *id005
+      Cheese: *id005
+      Milk: *id004
+    to: Rome
+  - from: Rome
+    mercandise:
+      Apples: *id006
+      Bananas: *id005
+      Beer: *id003
+      Bread: *id003
+      Cheese: *id004
+      Milk: *id004
+    to: Venezia
+- id: s6
+  route:
+  - from: Verona
+    mercandise:
+      Apples: *id003
+      Bananas: *id006
+      Beer: *id002
+      Bread: *id006
+      Cheese: *id004
+      Milk: *id005
+    to: Rome
+  - from: Rome
+    mercandise:
+      Apples: *id006
+      Bananas: *id003
+      Beer: *id004
+      Bread: *id004
+      Cheese: *id002
+      Milk: *id004
+    to: Trento
+  - from: Trento
+    mercandise:
+      Apples: *id005
+      Bananas: *id002
+      Bread: *id005
+      Cheese: *id004
+    to: Milano
+  - from: Milano
+    mercandise:
+      Apples: *id003
+      Beer: *id003
+      Cheese: *id005
+    to: Venezia
+- id: s7
+  route:
+  - from: Milano
+    mercandise:
+      Apples: *id003
+      Bananas: *id006
+      Beer: *id004
+      Bread: *id005
+      Cheese: *id004
+      Milk: *id003
+    to: Trento
+  - from: Trento
+    mercandise:
+      Apples: *id002
+      Bananas: *id005
+      Beer: *id003
+      Bread: *id004
+      Cheese: *id002
+      Milk: *id004
+    to: Verona
+- id: s8
+  route:
+  - from: Milano
+    mercandise:
+      Bananas: *id005
+      Beer: *id002
+      Bread: *id006
+      Cheese: *id006
+      Milk: *id003
+    to: Venezia
+  - from: Venezia
+    mercandise:
+      Apples: *id002
+      Bananas: *id004
+      Bread: *id005
+      Cheese: *id002
+      Milk: *id002
+    to: Verona
+  - from: Verona
+    mercandise:
+      Bananas: *id006
+      Bread: *id003
+      Milk: *id003
+    to: Trento
+- id: s9
+  route:
+  - from: Verona
+    mercandise:
+      Apples: *id004
+      Bananas: *id005
+      Bread: *id002
+      Cheese: *id005
+    to: Rome
+  - from: Rome
+    mercandise:
+      Bananas: *id003
+      Beer: *id005
+      Cheese: *id006
+      Milk: *id006
+    to: Trento
+  - from: Trento
+    mercandise:
+      Apples: *id006
+      Cheese: *id006
+      Milk: *id005
+    to: Venezia
+- id: s10
+  route:
+  - from: Verona
+    mercandise:
+      Bananas: *id006
+      Beer: *id002
+      Bread: *id002
+      Cheese: *id005
+    to: Rome
+  - from: Rome
+    mercandise:
+      Bananas: *id003
+      Bread: *id004
+      Cheese: *id002
+      Milk: *id003
+    to: Trento
+  - from: Trento
+    mercandise:
+      Beer: *id002
+      Cheese: *id006
+      Milk: *id004
+    to: Venezia
