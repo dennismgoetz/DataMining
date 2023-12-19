@@ -1,293 +1,713 @@
 - id: s1
   route:
+  - from: Firenze
+    mercandise:
+      Butter: 20
+      Cheese: 5
+      Honey: 20
+      Potatoes: 21
+    to: Bolzano
+  - from: Bolzano
+    mercandise:
+      Bread: 7
+      Carrots: 15
+      Meat: 16
+      Potatoes: 19
+    to: Rome
   - from: Rome
     mercandise:
-      Apples: &id006 !!python/object/apply:numpy.core.multiarray.scalar
-      - &id001 !!python/object/apply:numpy.dtype
-        args:
-        - i4
-        - false
-        - true
-        state: !!python/tuple
-        - 3
-        - <
-        - null
-        - null
-        - null
-        - -1
-        - -1
-        - 0
-      - !!binary |
-        AgAAAA==
-      Beer: &id004 !!python/object/apply:numpy.core.multiarray.scalar
-      - *id001
-      - !!binary |
-        BgAAAA==
-      Bread: &id003 !!python/object/apply:numpy.core.multiarray.scalar
-      - *id001
-      - !!binary |
-        CAAAAA==
-      Cheese: &id002 !!python/object/apply:numpy.core.multiarray.scalar
-      - *id001
-      - !!binary |
-        BAAAAA==
-      Milk: &id005 !!python/object/apply:numpy.core.multiarray.scalar
-      - *id001
-      - !!binary |
-        CgAAAA==
-    to: Venezia
-  - from: Venezia
-    mercandise:
-      Apples: *id002
-      Bananas: *id002
-      Beer: *id003
-      Cheese: *id004
-      Milk: *id004
-    to: Trento
-  - from: Trento
-    mercandise:
-      Apples: *id003
-      Bananas: *id005
-      Bread: *id002
-      Cheese: *id006
-      Milk: *id004
-    to: Verona
-  - from: Verona
-    mercandise:
-      Apples: *id004
-      Beer: *id002
-      Bread: *id005
+      Beer: 3
+      Cheese: 23
+      Honey: 8
+      Pasta: 14
     to: Milano
+  - from: Milano
+    mercandise:
+      Fish: 3
+      Pasta: 10
+      Water: 14
+      Yogurt: 14
+    to: Udine
+  - from: Udine
+    mercandise:
+      Carrots: 23
+      Chocolate: 15
+      Water: 17
+    to: Siena
+  - from: Siena
+    mercandise:
+      Beer: 8
+      Cheese: 20
+      Milk: 28
+      Potatoes: 12
+    to: Monza
 - id: s2
   route:
-  - from: Trento
+  - from: Firenze
     mercandise:
-      Apples: *id005
-      Bananas: *id006
-      Bread: *id006
-      Cheese: *id002
-      Milk: *id006
-    to: Milano
-  - from: Milano
+      Bananas: 30
+      Cheese: 4
+      Chocolate: 30
+      Potatoes: 14
+      Tomatoes: 13
+    to: Siena
+  - from: Siena
     mercandise:
-      Apples: *id004
-      Bananas: *id004
-      Beer: *id002
-      Bread: *id006
-      Cheese: *id005
-      Milk: *id004
+      Milk: 15
+      Potatoes: 13
+      Yogurt: 30
+    to: Palermo
+  - from: Palermo
+    mercandise:
+      Fish: 25
+      Milk: 11
+      Tea: 19
     to: Rome
   - from: Rome
     mercandise:
-      Apples: *id004
-      Bananas: *id005
-      Beer: *id003
-      Bread: *id005
-      Cheese: *id005
-      Milk: *id004
-    to: Verona
-  - from: Verona
+      Butter: 18
+      Cheese: 16
+      Tomatoes: 12
+    to: Bergamo
+  - from: Bergamo
     mercandise:
-      Bananas: *id006
-      Bread: *id005
-      Cheese: *id002
+      Fish: 20
+      Pasta: 26
+      Pens: 21
+      Rice: 21
+      Tea: 3
+      Tomatoes: 12
     to: Venezia
+  - from: Venezia
+    mercandise:
+      Bananas: 13
+      Bread: 17
+      Carrots: 19
+      Cheese: 27
+      Honey: 12
+      Tea: 18
+    to: Milano
 - id: s3
   route:
-  - from: Verona
+  - from: Bologna
     mercandise:
-      Apples: *id003
-      Bananas: *id002
-      Beer: *id002
-      Bread: *id003
-      Cheese: *id003
-      Milk: *id005
-    to: Rome
-  - from: Rome
+      Beer: 26
+      Bread: 6
+      Milk: 17
+    to: Lecce
+  - from: Lecce
     mercandise:
-      Apples: *id003
-      Bananas: *id004
-      Beer: *id006
-      Bread: *id006
-      Cheese: *id004
-      Milk: *id004
-    to: Trento
-  - from: Trento
+      Cheese: 7
+      Rice: 18
+      Water: 15
+    to: Venezia
+  - from: Venezia
     mercandise:
-      Bananas: *id002
-      Bread: *id004
-      Milk: *id006
-    to: Milano
+      Meat: 3
+      Pens: 5
+      Yogurt: 24
+    to: Firenze
+  - from: Firenze
+    mercandise:
+      Butter: 22
+      Cheese: 28
+      Chocolate: 12
+      Rice: 6
+    to: Padua
+  - from: Padua
+    mercandise:
+      Apples: 15
+      Bananas: 27
+      Bread: 12
+      Butter: 18
+      Fish: 4
+      Milk: 23
+    to: Palermo
 - id: s4
   route:
-  - from: Venezia
+  - from: Bergamo
     mercandise:
-      Apples: *id004
-      Bananas: *id004
-      Bread: *id004
-      Cheese: *id004
-      Milk: *id005
-    to: Milano
-  - from: Milano
+      Bananas: 6
+      Beer: 9
+      Bread: 14
+      Potatoes: 15
+      Rice: 13
+    to: Monza
+  - from: Monza
     mercandise:
-      Apples: *id004
-      Bananas: *id005
-      Bread: *id003
-      Cheese: *id002
-      Milk: *id005
-    to: Trento
+      Bananas: 10
+      Bread: 5
+      Carrots: 29
+      Cheese: 11
+      Milk: 5
+      Potatoes: 30
+    to: Pisa
+  - from: Pisa
+    mercandise:
+      Butter: 25
+      Carrots: 29
+      Honey: 30
+      Milk: 3
+      Pasta: 10
+      Potatoes: 19
+    to: Venezia
 - id: s5
   route:
-  - from: Milano
+  - from: Venezia
     mercandise:
-      Bananas: *id003
-      Beer: *id003
-      Milk: *id003
-    to: Trento
-  - from: Trento
+      Apples: 7
+      Beer: 18
+      Fish: 13
+      Potatoes: 15
+      Tea: 26
+      Tomatoes: 8
+    to: Bologna
+  - from: Bologna
     mercandise:
-      Apples: *id003
-      Bananas: *id002
-      Beer: *id004
-      Bread: *id003
-      Cheese: *id006
-      Milk: *id002
-    to: Verona
-  - from: Verona
+      Apples: 29
+      Fish: 19
+      Honey: 23
+      Milk: 22
+      Tomatoes: 15
+    to: Napoli
+  - from: Napoli
     mercandise:
-      Bananas: *id005
-      Beer: *id003
-      Bread: *id005
-      Cheese: *id005
-      Milk: *id004
-    to: Rome
-  - from: Rome
+      Apples: 17
+      Pasta: 10
+      Potatoes: 9
+      Rice: 5
+      Tea: 12
+    to: Siena
+  - from: Siena
     mercandise:
-      Apples: *id006
-      Bananas: *id005
-      Beer: *id003
-      Bread: *id003
-      Cheese: *id004
-      Milk: *id004
-    to: Venezia
+      Cheese: 23
+      Pens: 26
+      Rice: 5
+      Tea: 9
+    to: Bolzano
+  - from: Bolzano
+    mercandise:
+      Butter: 26
+      Meat: 5
+      Rice: 17
+    to: Udine
+  - from: Udine
+    mercandise:
+      Beer: 13
+      Cheese: 2
+      Milk: 12
+      Pens: 4
+    to: Modena
 - id: s6
   route:
-  - from: Verona
+  - from: Milano
     mercandise:
-      Apples: *id003
-      Bananas: *id006
-      Beer: *id002
-      Bread: *id006
-      Cheese: *id004
-      Milk: *id005
-    to: Rome
-  - from: Rome
-    mercandise:
-      Apples: *id006
-      Bananas: *id003
-      Beer: *id004
-      Bread: *id004
-      Cheese: *id002
-      Milk: *id004
+      Honey: 17
+      Milk: 4
+      Pasta: 3
+      Pens: 28
     to: Trento
   - from: Trento
     mercandise:
-      Apples: *id005
-      Bananas: *id002
-      Bread: *id005
-      Cheese: *id004
+      Cheese: 12
+      Honey: 24
+      Milk: 16
+      Pens: 3
+      Potatoes: 11
+    to: Monza
+  - from: Monza
+    mercandise:
+      Bananas: 29
+      Bread: 5
+      Pasta: 27
+      Potatoes: 3
+      Tomatoes: 13
+      Water: 12
+    to: Genova
+  - from: Genova
+    mercandise:
+      Beer: 24
+      Chocolate: 12
+      Fish: 4
+      Potatoes: 6
+    to: Napoli
+  - from: Napoli
+    mercandise:
+      Apples: 18
+      Bread: 15
+      Butter: 8
+      Honey: 22
+      Milk: 12
+      Yogurt: 3
+    to: Bolzano
+- id: s7
+  route:
+  - from: Modena
+    mercandise:
+      Beer: 12
+      Butter: 5
+      Potatoes: 8
+      Rice: 19
+      Tomatoes: 24
+      Yogurt: 7
+    to: Bolzano
+  - from: Bolzano
+    mercandise:
+      Pens: 8
+      Tomatoes: 19
+      Water: 3
+    to: Rome
+  - from: Rome
+    mercandise:
+      Bananas: 30
+      Carrots: 26
+      Cheese: 22
+      Pasta: 8
+      Water: 11
+    to: Torino
+  - from: Torino
+    mercandise:
+      Butter: 29
+      Cheese: 11
+      Pasta: 2
+      Potatoes: 11
     to: Milano
   - from: Milano
     mercandise:
-      Apples: *id003
-      Beer: *id003
-      Cheese: *id005
-    to: Venezia
-- id: s7
+      Cheese: 8
+      Pens: 17
+      Potatoes: 4
+      Tea: 28
+      Water: 23
+    to: Bologna
+- id: s8
   route:
-  - from: Milano
+  - from: Venezia
     mercandise:
-      Apples: *id003
-      Bananas: *id006
-      Beer: *id004
-      Bread: *id005
-      Cheese: *id004
-      Milk: *id003
+      Apples: 11
+      Bread: 8
+      Carrots: 16
+      Meat: 6
+    to: Monza
+  - from: Monza
+    mercandise:
+      Beer: 16
+      Butter: 23
+      Cheese: 25
+      Honey: 2
+      Pasta: 13
+      Tea: 2
+    to: Lecce
+  - from: Lecce
+    mercandise:
+      Apples: 5
+      Bananas: 13
+      Pens: 10
+    to: Rome
+  - from: Rome
+    mercandise:
+      Cheese: 6
+      Pens: 25
+      Water: 4
+    to: Bolzano
+  - from: Bolzano
+    mercandise:
+      Beer: 12
+      Chocolate: 9
+      Fish: 11
+      Meat: 28
+      Pens: 5
+      Potatoes: 4
+    to: Palermo
+- id: s9
+  route:
+  - from: Padua
+    mercandise:
+      Bread: 10
+      Cheese: 23
+      Chocolate: 29
+      Potatoes: 11
+      Tomatoes: 7
+    to: Monza
+  - from: Monza
+    mercandise:
+      Beer: 19
+      Carrots: 3
+      Rice: 15
+      Tea: 2
+    to: Bologna
+  - from: Bologna
+    mercandise:
+      Butter: 8
+      Rice: 21
+      Water: 4
+    to: Palermo
+- id: s10
+  route:
+  - from: Venezia
+    mercandise:
+      Bread: 22
+      Carrots: 5
+      Chocolate: 5
+      Meat: 13
+      Potatoes: 8
+      Water: 5
+    to: Monza
+  - from: Monza
+    mercandise:
+      Apples: 5
+      Bananas: 19
+      Beer: 4
+      Potatoes: 9
+      Yogurt: 2
+    to: Genova
+  - from: Genova
+    mercandise:
+      Bread: 12
+      Carrots: 18
+      Rice: 2
+      Water: 24
     to: Trento
   - from: Trento
     mercandise:
-      Apples: *id002
-      Bananas: *id005
-      Beer: *id003
-      Bread: *id004
-      Cheese: *id002
-      Milk: *id004
-    to: Verona
-- id: s8
+      Meat: 7
+      Milk: 10
+      Pasta: 10
+      Tea: 10
+    to: Palermo
+  - from: Palermo
+    mercandise:
+      Apples: 27
+      Carrots: 15
+      Cheese: 10
+      Potatoes: 15
+    to: Milano
+  - from: Milano
+    mercandise:
+      Bananas: 29
+      Beer: 11
+      Pasta: 5
+      Rice: 29
+      Water: 9
+    to: Modena
+- id: s11
+  route:
+  - from: Verona
+    mercandise:
+      Beer: 20
+      Cheese: 16
+      Yogurt: 25
+    to: Padua
+  - from: Padua
+    mercandise:
+      Fish: 25
+      Pasta: 18
+      Pens: 24
+    to: Bergamo
+  - from: Bergamo
+    mercandise:
+      Apples: 25
+      Bread: 23
+      Butter: 24
+      Yogurt: 4
+    to: Palermo
+- id: s12
+  route:
+  - from: Padua
+    mercandise:
+      Bread: 7
+      Carrots: 8
+      Cheese: 23
+      Honey: 26
+      Meat: 8
+      Pens: 22
+    to: Lecce
+  - from: Lecce
+    mercandise:
+      Carrots: 15
+      Chocolate: 4
+      Pasta: 6
+      Water: 16
+    to: Napoli
+  - from: Napoli
+    mercandise:
+      Apples: 29
+      Pasta: 29
+      Potatoes: 6
+    to: Firenze
+  - from: Firenze
+    mercandise:
+      Cheese: 20
+      Milk: 19
+      Rice: 19
+    to: Trento
+  - from: Trento
+    mercandise:
+      Fish: 24
+      Pens: 24
+      Tomatoes: 30
+    to: Bergamo
+- id: s13
   route:
   - from: Milano
     mercandise:
-      Bananas: *id005
-      Beer: *id002
-      Bread: *id006
-      Cheese: *id006
-      Milk: *id003
+      Apples: 3
+      Bananas: 23
+      Yogurt: 22
+    to: Torino
+  - from: Torino
+    mercandise:
+      Apples: 19
+      Beer: 12
+      Rice: 26
+    to: Verona
+  - from: Verona
+    mercandise:
+      Bananas: 4
+      Fish: 27
+      Pasta: 27
+      Rice: 13
+      Tomatoes: 18
+    to: Venezia
+- id: s14
+  route:
+  - from: Bergamo
+    mercandise:
+      Bananas: 24
+      Carrots: 27
+      Fish: 25
+      Potatoes: 5
+    to: Verona
+  - from: Verona
+    mercandise:
+      Apples: 28
+      Pasta: 7
+      Pens: 20
+      Tea: 15
+      Yogurt: 2
+    to: Trento
+  - from: Trento
+    mercandise:
+      Bread: 8
+      Meat: 24
+      Yogurt: 20
+    to: Bolzano
+  - from: Bolzano
+    mercandise:
+      Chocolate: 14
+      Milk: 27
+      Tomatoes: 21
+      Water: 24
+    to: Monza
+  - from: Monza
+    mercandise:
+      Butter: 20
+      Cheese: 13
+      Fish: 26
+      Tomatoes: 27
+      Water: 10
+      Yogurt: 11
+    to: Milano
+- id: s15
+  route:
+  - from: Modena
+    mercandise:
+      Chocolate: 19
+      Fish: 27
+      Meat: 27
+      Pens: 6
+    to: Torino
+  - from: Torino
+    mercandise:
+      Meat: 18
+      Pasta: 3
+      Tomatoes: 17
+    to: Udine
+  - from: Udine
+    mercandise:
+      Bread: 25
+      Meat: 16
+      Potatoes: 25
+    to: Bergamo
+  - from: Bergamo
+    mercandise:
+      Cheese: 10
+      Meat: 8
+      Pens: 3
+      Tomatoes: 24
+    to: Bologna
+  - from: Bologna
+    mercandise:
+      Carrots: 26
+      Chocolate: 28
+      Pasta: 30
+    to: Monza
+- id: s16
+  route:
+  - from: Palermo
+    mercandise:
+      Beer: 20
+      Cheese: 17
+      Pens: 3
+      Tea: 26
+      Water: 16
+    to: Bolzano
+  - from: Bolzano
+    mercandise:
+      Meat: 4
+      Pens: 9
+      Potatoes: 29
+      Water: 4
+    to: Siena
+  - from: Siena
+    mercandise:
+      Bananas: 28
+      Beer: 24
+      Tomatoes: 15
+    to: Verona
+  - from: Verona
+    mercandise:
+      Beer: 24
+      Bread: 5
+      Chocolate: 13
+      Tomatoes: 8
+      Yogurt: 9
     to: Venezia
   - from: Venezia
     mercandise:
-      Apples: *id002
-      Bananas: *id004
-      Bread: *id005
-      Cheese: *id002
-      Milk: *id002
-    to: Verona
-  - from: Verona
-    mercandise:
-      Bananas: *id006
-      Bread: *id003
-      Milk: *id003
-    to: Trento
-- id: s9
+      Bread: 14
+      Carrots: 7
+      Chocolate: 13
+      Potatoes: 28
+      Tomatoes: 21
+    to: Udine
+- id: s17
   route:
-  - from: Verona
+  - from: Napoli
     mercandise:
-      Apples: *id004
-      Bananas: *id005
-      Bread: *id002
-      Cheese: *id005
-    to: Rome
-  - from: Rome
+      Bananas: 3
+      Carrots: 5
+      Meat: 19
+      Potatoes: 13
+      Tea: 27
+    to: Bergamo
+  - from: Bergamo
     mercandise:
-      Bananas: *id003
-      Beer: *id005
-      Cheese: *id006
-      Milk: *id006
-    to: Trento
-  - from: Trento
+      Apples: 21
+      Bananas: 17
+      Pasta: 8
+      Water: 5
+    to: Monza
+  - from: Monza
     mercandise:
-      Apples: *id006
-      Cheese: *id006
-      Milk: *id005
-    to: Venezia
-- id: s10
+      Bread: 14
+      Honey: 28
+      Potatoes: 2
+    to: Genova
+  - from: Genova
+    mercandise:
+      Beer: 14
+      Cheese: 17
+      Meat: 9
+      Tea: 11
+      Tomatoes: 20
+    to: Padua
+- id: s18
   route:
-  - from: Verona
+  - from: Siena
     mercandise:
-      Bananas: *id006
-      Beer: *id002
-      Bread: *id002
-      Cheese: *id005
-    to: Rome
-  - from: Rome
+      Cheese: 12
+      Honey: 24
+      Meat: 2
+      Tea: 13
+    to: Bolzano
+  - from: Bolzano
     mercandise:
-      Bananas: *id003
-      Bread: *id004
-      Cheese: *id002
-      Milk: *id003
-    to: Trento
-  - from: Trento
+      Apples: 11
+      Butter: 2
+      Chocolate: 8
+      Pens: 13
+    to: Milano
+  - from: Milano
     mercandise:
-      Beer: *id002
-      Cheese: *id006
-      Milk: *id004
+      Bread: 18
+      Butter: 29
+      Carrots: 8
+      Fish: 29
+    to: Napoli
+  - from: Napoli
+    mercandise:
+      Apples: 6
+      Beer: 2
+      Butter: 25
+      Fish: 11
+      Potatoes: 14
+    to: Bologna
+- id: s19
+  route:
+  - from: Udine
+    mercandise:
+      Beer: 25
+      Carrots: 18
+      Honey: 12
+      Meat: 27
+      Rice: 19
+      Tomatoes: 26
+    to: Genova
+  - from: Genova
+    mercandise:
+      Bananas: 6
+      Fish: 26
+      Meat: 25
+      Milk: 7
+      Potatoes: 14
+    to: Napoli
+  - from: Napoli
+    mercandise:
+      Butter: 14
+      Chocolate: 3
+      Potatoes: 30
+      Tea: 24
     to: Venezia
+  - from: Venezia
+    mercandise:
+      Carrots: 27
+      Cheese: 28
+      Pasta: 7
+      Pens: 18
+      Tea: 7
+      Yogurt: 4
+    to: Modena
+- id: s20
+  route:
+  - from: Siena
+    mercandise:
+      Cheese: 24
+      Tea: 25
+      Water: 29
+    to: Milano
+  - from: Milano
+    mercandise:
+      Butter: 4
+      Carrots: 7
+      Cheese: 26
+      Potatoes: 4
+    to: Bergamo
+  - from: Bergamo
+    mercandise:
+      Apples: 15
+      Honey: 29
+      Tea: 12
+    to: Firenze
+  - from: Firenze
+    mercandise:
+      Chocolate: 10
+      Rice: 16
+      Tea: 26
+    to: Udine
+  - from: Udine
+    mercandise:
+      Carrots: 28
+      Cheese: 28
+      Yogurt: 25
+    to: Genova
