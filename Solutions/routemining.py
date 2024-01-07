@@ -670,13 +670,13 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
         return result[:5]
 
 # %%
-def findbestroute(actual_routes_file, driver_id, limit_data=0, prints1=False, numperm=128):
+def findbestroute(actual_routes_file, driver_id, limit_data=0, prints=False,  printsalot=False, numperm=128):
     
-    if (prints1==True): print("Generating routes")
-    routes=findroutes(actual_routes_file, limit_data, driver_id, prints=False)
+    if (prints==True): print("Generating routes")
+    routes=findroutes(actual_routes_file, limit_data, driver_id, prints=printsalot)
     
-    if (prints1==True): print("Choosing best route")
-    result=rankroutes(actual_routes_file, routes, driver_id, limit_actual_routes=limit_data, numperm3=numperm, findbest=1, prints=False)
+    if (prints==True): print("Choosing best route")
+    result=rankroutes(actual_routes_file, routes, driver_id, limit_actual_routes=limit_data, numperm3=numperm, findbest=1, prints=printsalot)
     
     return result
 
