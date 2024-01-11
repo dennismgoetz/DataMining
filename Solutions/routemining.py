@@ -123,7 +123,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
             if datasize < 100:
                 amount_of_samples=datasize
             else:
-                amount_of_samples=100 + round(3*(datasize-100)**(1/2))
+                amount_of_samples=97 + round(3*(datasize-100)**(1/2))
                 
             max_expected_clusters=round(float(amount_of_samples)**(1/2))
 
@@ -149,8 +149,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
             #if two or more different points are present in the subspace of the citypair and the max_expected_cluster is more than 2 
             #(more than two because if it is two this means dataset is very, very small)
             if one_point_marker==False and max_expected_clusters>2:
-                #loop through possible amount of clusters and stop for first silhouette with score >0.7, this saves time
-                #and we are not looking for big number of clusters (this is done with minmaxnormalisation)
+                #loop through possible amount of clusters with normalization (this is done with minmaxnormalization)
                 for k in K_range:
                     scaler = MinMaxScaler()
                     sample_space = scaler.fit_transform(sample_space)
@@ -167,6 +166,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                     k=1
             else:
                 k=1
+        
             #now use kmeans to find the labels of the points for the entire set (with normalised data)
             scaler = MinMaxScaler()
             data = scaler.fit_transform(data)
@@ -248,13 +248,14 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                 w1=x
                 index1=w1.index('-')
                 w1=w1[index1+1:]
+                
                 index3=w1.index('-')
                 w1=w1[:index3]
                     
-                w2=x
+                w2=y
                 index2=w2.index('-')
                 w2=w2[:index2]
-                
+                    
                 #We do a similar thing with y, except we want the first city.  
             
                 
@@ -397,7 +398,6 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                                     nextcandidates.append((tuple1,X[tuple1]))
                                 if (tuple2,X[tuple2]) not in nextcandidates:
                                     nextcandidates.append((tuple2,X[tuple2]))
-                                    
                                     
                 return (lista,extend,nextcandidates)
             
@@ -603,7 +603,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
             return offeroutes(OFFER)
             
         #assumes that there are at least possible routes as there are standard routes        
-        OFFER= FREQUENT_ITEMS(dataset,len(dataset)/(NS*5))
+        OFFER= FREQUENT_ITEMS(dataset,len(dataset)/(NS*2))
         
         return (OFFER)
 
