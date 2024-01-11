@@ -862,7 +862,7 @@ def findbestroute(actual_routes_file, driver_id, limit_data=0, prints=False,  pr
     return result
 
 # %%
-def createfiles(filename_actual, filename_sort, destination_file, tasknumber ,limit_actual_routes=0, prints=False):
+def createfiles(filename_actual, filename_sort, destination_file, tasknumber ,limit_actual_routes=0, prints=False, printsalot=False):
     
     import json
 
@@ -905,7 +905,7 @@ def createfiles(filename_actual, filename_sort, destination_file, tasknumber ,li
             if tasknumber==3:
                 info2={}
                 info2['driver']=driver_id
-                info2['route']=findbestroute(filename_actual, driver_id, limit_actual_routes, prints=prints, printsalot=True)
+                info2['route']=findbestroute(filename_actual, driver_id, limit_actual_routes, prints=prints, printsalot=printsalot)
                 solution3_file.append(info2)
 
         if tasknumber==2: create_file(solution2_file, destination_file) 
