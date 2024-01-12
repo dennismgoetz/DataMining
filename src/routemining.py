@@ -5,6 +5,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
     
     import json
     import math
+    import copy
     import warnings
     import random
     from sklearn.cluster import KMeans
@@ -157,7 +158,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                     kmeans.fit(sample_space)
                     labels = kmeans.labels_
                     silhouette_scores.append(silhouette_score(sample_space, labels))
-                
+                    
                 #determine k using the sampled space, if silhouette score is not big enough 1 clusters is expected.
                 max_ss=max(silhouette_scores)
                 if max_ss>0.7:
@@ -172,7 +173,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
             data = scaler.fit_transform(data)
             kmeans = KMeans(n_clusters=k)
             kmeans.fit(data)
-
+                        
             #build the extended data points set which also contain the labels of the points
             labels=kmeans.labels_
             
@@ -181,15 +182,25 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                 labeling[tuple(point)]=labels[index]
             ext_data_points[city]=labeling
             
-            #build a dataset which contains info about each cluster (count, inertia and centroid)
+            print()
+            #build a dataset which contains info about each cluster (count, inertia and centroid) for the centroid it takes the closest point to the
+            #centroid as a representative
             for i in range(k):
                 temp={}
                 oneclusterdata=data[labels==i]
                 temp["count"]=(len(oneclusterdata))
+                
                 kmeans1=KMeans(n_clusters=1)
                 kmeans1.fit(oneclusterdata)
                 temp["inertia"]=(kmeans1.inertia_)
-                temp["centroid"]=tuple(round_list(scaler.inverse_transform(kmeans.cluster_centers_)[i]))
+                
+                distances=list(kmeans1.transform(oneclusterdata))
+                mindistancepoint=oneclusterdata[distances.index(min(distances))]
+                point=(list(mindistancepoint))
+                print(scaler.inverse_transform([point])[0])
+                temp["centroid"]=scaler.inverse_transform([point])[0]
+
+                #temp["centroid"]=tuple(round_list(scaler.inverse_transform(kmeans.cluster_centers_)[i]))
                 clusterinfo[city+"-"+str(i)]=temp
         
         return clusterinfo, ext_data_points
