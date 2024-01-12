@@ -182,7 +182,6 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                 labeling[tuple(point)]=labels[index]
             ext_data_points[city]=labeling
             
-            print()
             #build a dataset which contains info about each cluster (count, inertia and centroid) for the centroid it takes the closest point to the
             #centroid as a representative
             for i in range(k):
@@ -197,10 +196,10 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                 distances=list(kmeans1.transform(oneclusterdata))
                 mindistancepoint=oneclusterdata[distances.index(min(distances))]
                 point=(list(mindistancepoint))
-                print(scaler.inverse_transform([point])[0])
-                temp["centroid"]=scaler.inverse_transform([point])[0]
+                temp["centroid"]=round_list(scaler.inverse_transform([point])[0])
 
-                #temp["centroid"]=tuple(round_list(scaler.inverse_transform(kmeans.cluster_centers_)[i]))
+                #temp["centroid"]=tuple(round_list(scaler.inverse_transform(kmeans.cluster_centers_)[i])) #the real centroid
+                
                 clusterinfo[city+"-"+str(i)]=temp
         
         return clusterinfo, ext_data_points
