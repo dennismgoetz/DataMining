@@ -1,1 +1,598 @@
-[{"driver": "A", "route": [{"from": "Bologna", "to": "Lecce", "merchandise": {"Chocolate": 7.0, "Tea": 11.0, "Bread": 15.0}}, {"from": "Lecce", "to": "Venezia", "merchandise": {"Pasta": 8.0, "Chocolate": 12.0, "Potatoes": 9.0, "Beer": 7.0, "Apples": 7.0, "Rice": 9.0}}, {"from": "Venezia", "to": "Siena", "merchandise": {"Tomatoes": 14.0, "Bread": 15.0, "Chocolate": 11.0, "Honey": 2.0, "Milk": 12.0, "Rice": 13.0}}, {"from": "Siena", "to": "Rome", "merchandise": {"Tea": 11.0, "Cheese": 12.0, "Meat": 8.0, "Milk": 3.0}}]}, {"driver": "B", "route": [{"from": "Venezia", "to": "Trento", "merchandise": {"Carrots": 2.0, "Pasta": 21.0, "Fish": 2.0, "Bread": 14.0, "Beer": 2.0, "Meat": 6.0, "Milk": 25.0}}, {"from": "Trento", "to": "Bolzano", "merchandise": {"Carrots": 15.0, "Fish": 6.0, "Rice": 27.0, "Potatoes": 23.0, "Beer": 28.0, "Meat": 9.0, "Milk": 22.0}}, {"from": "Bolzano", "to": "Napoli", "merchandise": {"Carrots": 26.0, "Chocolate": 2.0, "Tea": 24.0, "Bread": 29.0, "Water": 27.0, "Honey": 30.0}}, {"from": "Napoli", "to": "Bologna", "merchandise": {"Yogurt": 13.0, "Bananas": 10.0, "Cheese": 27.0, "Pens": 2.0, "Water": 11.0, "Meat": 10.0}}, {"from": "Bologna", "to": "Genova", "merchandise": {"Carrots": 25.0, "Tomatoes": 25.0, "Chocolate": 19.0, "Yogurt": 4.0, "Butter": 27.0, "Cheese": 4.0, "Apples": 9.0}}, {"from": "Genova", "to": "Lecce", "merchandise": {"Tomatoes": 3.0, "Chocolate": 11.0, "Yogurt": 2.0, "Butter": 28.0, "Bread": 6.0, "Water": 23.0, "Milk": 3.0}}]}, {"driver": "C", "route": [{"from": "Genova", "to": "Padova", "merchandise": {"Pasta": 4.0, "Bananas": 15.0, "Cheese": 11.0, "Pens": 7.0, "Apples": 4.0, "Milk": 15.0}}, {"from": "Padova", "to": "Napoli", "merchandise": {"Carrots": 23.0, "Pasta": 30.0, "Chocolate": 11.0}}, {"from": "Napoli", "to": "Udine", "merchandise": {"Pasta": 23.0, "Potatoes": 5.0, "Yogurt": 15.0, "Butter": 17.0, "Bread": 13.0}}, {"from": "Udine", "to": "Bergamo", "merchandise": {"Chocolate": 8.0, "Rice": 19.0, "Yogurt": 7.0}}, {"from": "Bergamo", "to": "Trento", "merchandise": {"Chocolate": 3.0, "Butter": 29.0, "Bread": 25.0, "Rice": 19.0, "Potatoes": 17.0, "Pens": 15.0, "Meat": 19.0}}]}, {"driver": "D", "route": [{"from": "Genova", "to": "Trento", "merchandise": {"Fish": 5.0, "Yogurt": 10.0, "Potatoes": 12.0, "Beer": 8.0}}, {"from": "Trento", "to": "Bolzano", "merchandise": {"Pasta": 8.0, "Fish": 11.0, "Chocolate": 6.0, "Beer": 4.0}}, {"from": "Bolzano", "to": "Siena", "merchandise": {"Tomatoes": 5.0, "Chocolate": 8.0, "Potatoes": 2.0, "Beer": 15.0, "Pens": 8.0, "Bread": 7.0}}, {"from": "Siena", "to": "Napoli", "merchandise": {"Pasta": 10.0, "Fish": 14.0, "Tea": 6.0, "Cheese": 2.0, "Water": 12.0, "Apples": 13.0}}, {"from": "Napoli", "to": "Rome", "merchandise": {"Tomatoes": 8.0, "Fish": 8.0, "Chocolate": 11.0, "Yogurt": 6.0, "Butter": 9.0, "Beer": 15.0, "Pens": 3.0}}]}, {"driver": "E", "route": [{"from": "Bolzano", "to": "Bergamo", "merchandise": {"Butter": 8.0, "Bread": 13.0, "Potatoes": 8.0, "Meat": 12.0}}, {"from": "Bergamo", "to": "Milano", "merchandise": {"Tea": 20.0, "Rice": 21.0, "Apples": 13.0, "Honey": 5.0}}, {"from": "Milano", "to": "Palermo", "merchandise": {"Pasta": 26.0, "Yogurt": 3.0, "Pens": 24.0, "Water": 9.0, "Milk": 20.0}}, {"from": "Palermo", "to": "Bologna", "merchandise": {"Bananas": 12.0, "Butter": 13.0, "Rice": 7.0, "Honey": 20.0, "Meat": 6.0}}, {"from": "Bologna", "to": "Napoli", "merchandise": {"Pasta": 30.0, "Fish": 28.0, "Butter": 13.0, "Pens": 10.0}}]}, {"driver": "F", "route": [{"from": "Bologna", "to": "Lecce", "merchandise": {"Chocolate": 7.0, "Tea": 17.0, "Bread": 29.0, "Rice": 4.0, "Beer": 2.0, "Water": 4.0}}, {"from": "Lecce", "to": "Venezia", "merchandise": {"Pasta": 19.0, "Chocolate": 12.0, "Potatoes": 29.0, "Beer": 30.0, "Apples": 16.0, "Rice": 19.0}}, {"from": "Venezia", "to": "Siena", "merchandise": {"Tomatoes": 26.0, "Bread": 29.0, "Chocolate": 11.0, "Honey": 2.0, "Milk": 12.0, "Rice": 13.0}}, {"from": "Siena", "to": "Rome", "merchandise": {"Carrots": 16.0, "Fish": 11.0, "Tea": 16.0, "Cheese": 18.0, "Meat": 8.0, "Milk": 3.0}}]}, {"driver": "G", "route": [{"from": "Rome", "to": "Venezia", "merchandise": {"Carrots": 10.0, "Butter": 10.0, "Cheese": 25.0, "Beer": 25.0, "Rice": 3.0}}, {"from": "Venezia", "to": "Bolzano", "merchandise": {"Tomatoes": 20.0, "Chocolate": 28.0, "Beer": 21.0, "Cheese": 24.0}}, {"from": "Bolzano", "to": "Genova", "merchandise": {"Tomatoes": 26.0, "Pasta": 25.0, "Yogurt": 8.0, "Butter": 15.0, "Cheese": 17.0, "Beer": 20.0, "Apples": 24.0}}]}, {"driver": "H", "route": [{"from": "Udine", "to": "Verona", "merchandise": {"Carrots": 8.0, "Pasta": 9.0, "Fish": 6.0, "Chocolate": 6.0, "Beer": 20.0, "Pens": 16.0, "Meat": 22.0}}, {"from": "Verona", "to": "Padova", "merchandise": {"Yogurt": 16.0, "Cheese": 12.0, "Bread": 17.0, "Rice": 8.0, "Beer": 4.0, "Apples": 5.0, "Honey": 7.0}}, {"from": "Padova", "to": "Venezia", "merchandise": {"Pasta": 15.0, "Fish": 29.0, "Butter": 15.0, "Rice": 10.0, "Potatoes": 9.0, "Pens": 2.0}}, {"from": "Venezia", "to": "Rome", "merchandise": {"Yogurt": 12.0, "Bananas": 3.0, "Butter": 2.0, "Rice": 15.0, "Potatoes": 26.0, "Meat": 20.0}}, {"from": "Rome", "to": "Bergamo", "merchandise": {"Carrots": 30.0, "Chocolate": 24.0, "Cheese": 20.0, "Rice": 2.0, "Honey": 3.0, "Apples": 18.0}}, {"from": "Bergamo", "to": "Genova", "merchandise": {"Carrots": 8.0, "Pasta": 11.0, "Fish": 30.0, "Potatoes": 21.0, "Tea": 25.0, "Meat": 10.0, "Bread": 22.0}}]}, {"driver": "I", "route": [{"from": "Udine", "to": "Siena", "merchandise": {"Chocolate": 17.0, "Tea": 20.0, "Yogurt": 23.0, "Bananas": 25.0, "Rice": 15.0}}, {"from": "Siena", "to": "Padova", "merchandise": {"Carrots": 22.0, "Pasta": 18.0, "Chocolate": 20.0, "Water": 17.0, "Meat": 18.0}}, {"from": "Padova", "to": "Milano", "merchandise": {"Butter": 20.0, "Potatoes": 18.0, "Yogurt": 17.0}}, {"from": "Milano", "to": "Trento", "merchandise": {"Carrots": 23.0, "Pasta": 23.0, "Fish": 25.0}}]}, {"driver": "J", "route": [{"from": "Genova", "to": "Napoli", "merchandise": {"Carrots": 5.0, "Fish": 13.0, "Chocolate": 12.0, "Honey": 10.0, "Milk": 12.0}}, {"from": "Napoli", "to": "Siena", "merchandise": {"Carrots": 6.0, "Fish": 12.0, "Chocolate": 11.0, "Tea": 4.0, "Beer": 2.0, "Pens": 12.0, "Honey": 7.0, "Meat": 12.0, "Rice": 7.0}}, {"from": "Siena", "to": "Milano", "merchandise": {"Tomatoes": 15.0, "Pasta": 12.0, "Chocolate": 12.0, "Potatoes": 2.0, "Butter": 15.0, "Honey": 11.0, "Bread": 10.0}}, {"from": "Milano", "to": "Udine", "merchandise": {"Chocolate": 12.0, "Potatoes": 4.0, "Yogurt": 7.0, "Tea": 7.0, "Pens": 14.0, "Water": 2.0, "Honey": 12.0, "Bread": 4.0}}, {"from": "Udine", "to": "Rome", "merchandise": {"Chocolate": 9.0, "Tea": 11.0, "Bananas": 11.0, "Pens": 15.0, "Water": 13.0, "Apples": 12.0, "Honey": 10.0, "Bread": 7.0}}]}]
+[
+  {
+    "driver": "A",
+    "route": [
+      {
+        "from": "Bologna",
+        "to": "Lecce",
+        "merchandise": {
+          "Chocolate": 7,
+          "Tea": 11,
+          "Bread": 15
+        }
+      },
+      {
+        "from": "Lecce",
+        "to": "Venezia",
+        "merchandise": {
+          "Pasta": 8,
+          "Chocolate": 12,
+          "Potatoes": 9,
+          "Beer": 7,
+          "Apples": 7,
+          "Rice": 9
+        }
+      },
+      {
+        "from": "Venezia",
+        "to": "Siena",
+        "merchandise": {
+          "Tomatoes": 14,
+          "Bread": 15,
+          "Chocolate": 11,
+          "Honey": 2,
+          "Milk": 12,
+          "Rice": 13
+        }
+      },
+      {
+        "from": "Siena",
+        "to": "Rome",
+        "merchandise": {
+          "Tea": 11,
+          "Cheese": 12,
+          "Meat": 8,
+          "Milk": 3
+        }
+      }
+    ]
+  },
+  {
+    "driver": "B",
+    "route": [
+      {
+        "from": "Venezia",
+        "to": "Trento",
+        "merchandise": {
+          "Carrots": 2,
+          "Pasta": 21,
+          "Fish": 2,
+          "Bread": 14,
+          "Beer": 2,
+          "Meat": 6,
+          "Milk": 25
+        }
+      },
+      {
+        "from": "Trento",
+        "to": "Bolzano",
+        "merchandise": {
+          "Carrots": 15,
+          "Fish": 6,
+          "Rice": 27,
+          "Potatoes": 23,
+          "Beer": 28,
+          "Meat": 9,
+          "Milk": 22
+        }
+      },
+      {
+        "from": "Bolzano",
+        "to": "Napoli",
+        "merchandise": {
+          "Carrots": 26,
+          "Chocolate": 2,
+          "Tea": 24,
+          "Bread": 29,
+          "Water": 27,
+          "Honey": 30
+        }
+      },
+      {
+        "from": "Napoli",
+        "to": "Bologna",
+        "merchandise": {
+          "Yogurt": 13,
+          "Bananas": 10,
+          "Cheese": 27,
+          "Pens": 2,
+          "Water": 11,
+          "Meat": 10
+        }
+      },
+      {
+        "from": "Bologna",
+        "to": "Genova",
+        "merchandise": {
+          "Carrots": 25,
+          "Tomatoes": 25,
+          "Chocolate": 19,
+          "Yogurt": 4,
+          "Butter": 27,
+          "Cheese": 4,
+          "Apples": 9
+        }
+      },
+      {
+        "from": "Genova",
+        "to": "Lecce",
+        "merchandise": {
+          "Tomatoes": 3,
+          "Chocolate": 11,
+          "Yogurt": 2,
+          "Butter": 28,
+          "Bread": 6,
+          "Water": 23,
+          "Milk": 3
+        }
+      }
+    ]
+  },
+  {
+    "driver": "C",
+    "route": [
+      {
+        "from": "Genova",
+        "to": "Padova",
+        "merchandise": {
+          "Pasta": 4,
+          "Bananas": 15,
+          "Cheese": 11,
+          "Pens": 7,
+          "Apples": 4,
+          "Milk": 15
+        }
+      },
+      {
+        "from": "Padova",
+        "to": "Napoli",
+        "merchandise": {
+          "Carrots": 23,
+          "Pasta": 30,
+          "Chocolate": 11
+        }
+      },
+      {
+        "from": "Napoli",
+        "to": "Udine",
+        "merchandise": {
+          "Pasta": 23,
+          "Potatoes": 5,
+          "Yogurt": 15,
+          "Butter": 17,
+          "Bread": 13
+        }
+      },
+      {
+        "from": "Udine",
+        "to": "Bergamo",
+        "merchandise": {
+          "Chocolate": 8,
+          "Rice": 19,
+          "Yogurt": 7
+        }
+      },
+      {
+        "from": "Bergamo",
+        "to": "Trento",
+        "merchandise": {
+          "Chocolate": 3,
+          "Butter": 29,
+          "Bread": 25,
+          "Rice": 19,
+          "Potatoes": 17,
+          "Pens": 15,
+          "Meat": 19
+        }
+      }
+    ]
+  },
+  {
+    "driver": "D",
+    "route": [
+      {
+        "from": "Genova",
+        "to": "Trento",
+        "merchandise": {
+          "Fish": 5,
+          "Yogurt": 10,
+          "Potatoes": 12,
+          "Beer": 8
+        }
+      },
+      {
+        "from": "Trento",
+        "to": "Bolzano",
+        "merchandise": {
+          "Pasta": 8,
+          "Fish": 11,
+          "Chocolate": 6,
+          "Beer": 4
+        }
+      },
+      {
+        "from": "Bolzano",
+        "to": "Siena",
+        "merchandise": {
+          "Tomatoes": 5,
+          "Chocolate": 8,
+          "Potatoes": 2,
+          "Beer": 15,
+          "Pens": 8,
+          "Bread": 7
+        }
+      },
+      {
+        "from": "Siena",
+        "to": "Napoli",
+        "merchandise": {
+          "Pasta": 10,
+          "Fish": 14,
+          "Tea": 6,
+          "Cheese": 2,
+          "Water": 12,
+          "Apples": 13
+        }
+      },
+      {
+        "from": "Napoli",
+        "to": "Rome",
+        "merchandise": {
+          "Tomatoes": 8,
+          "Fish": 8,
+          "Chocolate": 11,
+          "Yogurt": 6,
+          "Butter": 9,
+          "Beer": 15,
+          "Pens": 3
+        }
+      }
+    ]
+  },
+  {
+    "driver": "E",
+    "route": [
+      {
+        "from": "Bolzano",
+        "to": "Bergamo",
+        "merchandise": {
+          "Butter": 8,
+          "Bread": 13,
+          "Potatoes": 8,
+          "Meat": 12
+        }
+      },
+      {
+        "from": "Bergamo",
+        "to": "Milano",
+        "merchandise": {
+          "Tea": 20,
+          "Rice": 21,
+          "Apples": 13,
+          "Honey": 5
+        }
+      },
+      {
+        "from": "Milano",
+        "to": "Palermo",
+        "merchandise": {
+          "Pasta": 26,
+          "Yogurt": 3,
+          "Pens": 24,
+          "Water": 9,
+          "Milk": 20
+        }
+      },
+      {
+        "from": "Palermo",
+        "to": "Bologna",
+        "merchandise": {
+          "Bananas": 12,
+          "Butter": 13,
+          "Rice": 7,
+          "Honey": 20,
+          "Meat": 6
+        }
+      },
+      {
+        "from": "Bologna",
+        "to": "Napoli",
+        "merchandise": {
+          "Pasta": 30,
+          "Fish": 28,
+          "Butter": 13,
+          "Pens": 10
+        }
+      }
+    ]
+  },
+  {
+    "driver": "F",
+    "route": [
+      {
+        "from": "Bologna",
+        "to": "Lecce",
+        "merchandise": {
+          "Chocolate": 7,
+          "Tea": 17,
+          "Bread": 29,
+          "Rice": 4,
+          "Beer": 2,
+          "Water": 4
+        }
+      },
+      {
+        "from": "Lecce",
+        "to": "Venezia",
+        "merchandise": {
+          "Pasta": 19,
+          "Chocolate": 12,
+          "Potatoes": 29,
+          "Beer": 30,
+          "Apples": 16,
+          "Rice": 19
+        }
+      },
+      {
+        "from": "Venezia",
+        "to": "Siena",
+        "merchandise": {
+          "Tomatoes": 26,
+          "Bread": 29,
+          "Chocolate": 11,
+          "Honey": 2,
+          "Milk": 12,
+          "Rice": 13
+        }
+      },
+      {
+        "from": "Siena",
+        "to": "Rome",
+        "merchandise": {
+          "Carrots": 16,
+          "Fish": 11,
+          "Tea": 16,
+          "Cheese": 18,
+          "Meat": 8,
+          "Milk": 3
+        }
+      }
+    ]
+  },
+  {
+    "driver": "G",
+    "route": [
+      {
+        "from": "Rome",
+        "to": "Venezia",
+        "merchandise": {
+          "Carrots": 10,
+          "Butter": 10,
+          "Cheese": 25,
+          "Beer": 25,
+          "Rice": 3
+        }
+      },
+      {
+        "from": "Venezia",
+        "to": "Bolzano",
+        "merchandise": {
+          "Tomatoes": 20,
+          "Chocolate": 28,
+          "Beer": 21,
+          "Cheese": 24
+        }
+      },
+      {
+        "from": "Bolzano",
+        "to": "Genova",
+        "merchandise": {
+          "Tomatoes": 26,
+          "Pasta": 25,
+          "Yogurt": 8,
+          "Butter": 15,
+          "Cheese": 17,
+          "Beer": 20,
+          "Apples": 24
+        }
+      }
+    ]
+  },
+  {
+    "driver": "H",
+    "route": [
+      {
+        "from": "Udine",
+        "to": "Verona",
+        "merchandise": {
+          "Carrots": 8,
+          "Pasta": 9,
+          "Fish": 6,
+          "Chocolate": 6,
+          "Beer": 20,
+          "Pens": 16,
+          "Meat": 22
+        }
+      },
+      {
+        "from": "Verona",
+        "to": "Padova",
+        "merchandise": {
+          "Yogurt": 16,
+          "Cheese": 12,
+          "Bread": 17,
+          "Rice": 8,
+          "Beer": 4,
+          "Apples": 5,
+          "Honey": 7
+        }
+      },
+      {
+        "from": "Padova",
+        "to": "Venezia",
+        "merchandise": {
+          "Pasta": 15,
+          "Fish": 29,
+          "Butter": 15,
+          "Rice": 10,
+          "Potatoes": 9,
+          "Pens": 2
+        }
+      },
+      {
+        "from": "Venezia",
+        "to": "Rome",
+        "merchandise": {
+          "Yogurt": 12,
+          "Bananas": 3,
+          "Butter": 2,
+          "Rice": 15,
+          "Potatoes": 26,
+          "Meat": 20
+        }
+      },
+      {
+        "from": "Rome",
+        "to": "Bergamo",
+        "merchandise": {
+          "Carrots": 30,
+          "Chocolate": 24,
+          "Cheese": 20,
+          "Rice": 2,
+          "Honey": 3,
+          "Apples": 18
+        }
+      },
+      {
+        "from": "Bergamo",
+        "to": "Genova",
+        "merchandise": {
+          "Carrots": 8,
+          "Pasta": 11,
+          "Fish": 30,
+          "Potatoes": 21,
+          "Tea": 25,
+          "Meat": 10,
+          "Bread": 22
+        }
+      }
+    ]
+  },
+  {
+    "driver": "I",
+    "route": [
+      {
+        "from": "Udine",
+        "to": "Siena",
+        "merchandise": {
+          "Chocolate": 17,
+          "Tea": 20,
+          "Yogurt": 23,
+          "Bananas": 25,
+          "Rice": 15
+        }
+      },
+      {
+        "from": "Siena",
+        "to": "Padova",
+        "merchandise": {
+          "Carrots": 22,
+          "Pasta": 18,
+          "Chocolate": 20,
+          "Water": 17,
+          "Meat": 18
+        }
+      },
+      {
+        "from": "Padova",
+        "to": "Milano",
+        "merchandise": {
+          "Butter": 20,
+          "Potatoes": 18,
+          "Yogurt": 17
+        }
+      },
+      {
+        "from": "Milano",
+        "to": "Trento",
+        "merchandise": {
+          "Carrots": 23,
+          "Pasta": 23,
+          "Fish": 25
+        }
+      }
+    ]
+  },
+  {
+    "driver": "J",
+    "route": [
+      {
+        "from": "Genova",
+        "to": "Napoli",
+        "merchandise": {
+          "Carrots": 5,
+          "Fish": 13,
+          "Chocolate": 12,
+          "Honey": 10,
+          "Milk": 12
+        }
+      },
+      {
+        "from": "Napoli",
+        "to": "Siena",
+        "merchandise": {
+          "Carrots": 6,
+          "Fish": 12,
+          "Chocolate": 11,
+          "Tea": 4,
+          "Beer": 2,
+          "Pens": 12,
+          "Honey": 7,
+          "Meat": 12,
+          "Rice": 7
+        }
+      },
+      {
+        "from": "Siena",
+        "to": "Milano",
+        "merchandise": {
+          "Tomatoes": 15,
+          "Pasta": 12,
+          "Chocolate": 12,
+          "Potatoes": 2,
+          "Butter": 15,
+          "Honey": 11,
+          "Bread": 10
+        }
+      },
+      {
+        "from": "Milano",
+        "to": "Udine",
+        "merchandise": {
+          "Chocolate": 12,
+          "Potatoes": 4,
+          "Yogurt": 7,
+          "Tea": 7,
+          "Pens": 14,
+          "Water": 2,
+          "Honey": 12,
+          "Bread": 4
+        }
+      },
+      {
+        "from": "Udine",
+        "to": "Rome",
+        "merchandise": {
+          "Chocolate": 9,
+          "Tea": 11,
+          "Bananas": 11,
+          "Pens": 15,
+          "Water": 13,
+          "Apples": 12,
+          "Honey": 10,
+          "Bread": 7
+        }
+      }
+    ]
+  }
+]
