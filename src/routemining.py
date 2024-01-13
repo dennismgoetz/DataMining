@@ -15,7 +15,12 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
 
     def load_data(actual_routes_file1, limit_actual_routes1=0, driver_id=0):
         #load data from file and limit it as required
-        
+        def sample(upper_limit1, amount_of_samples1, data1):
+            #function to only take some points of the data.
+            rand_numbs=random.sample(range(0, upper_limit1), amount_of_samples1)
+            sample_space=[data1[i] for i in rand_numbs]
+            return sample_space
+
         def load_json(filename):
             #loads the json file into a variable
             with open(filename, 'r') as file:
@@ -34,9 +39,9 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                     driver_data.append(route)
             driver_data1=driver_data
 
-        #if a limit on total routes is set apply it
+        #if a limit on total routes is set apply it and take random samples out of the data to make sure it has similar 'diversity'
         if limit_actual_routes1!=0:
-            driver_data1=driver_data1[:limit_actual_routes1]
+            driver_data1=sample(len(driver_data1), limit_actual_routes1, driver_data1)
         return driver_data1
 
     def find_numb_dim_and_conn(data):
@@ -124,7 +129,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
             if datasize < 100:
                 amount_of_samples=datasize
             else:
-                amount_of_samples=97 + round(3*(datasize-100)**(1/2))
+                amount_of_samples=98 + round(3*(datasize-100)**(1/2))
                 
             max_expected_clusters=round(float(amount_of_samples)**(1/2))
 
@@ -646,7 +651,7 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
     
     from datasketch import MinHash
     import json
-    
+    import random
 
 
     def route_to_minhash(data1, mapborders, num_perm5):
@@ -791,6 +796,12 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
             data4 = json.load(file)
         return data4
 
+    def sample(upper_limit1, amount_of_samples1, data1):
+        #function to only take some points of the data.
+        rand_numbs=random.sample(range(0, upper_limit1), amount_of_samples1)
+        sample_space=[data1[i] for i in rand_numbs]
+        return sample_space
+
     def load_data1(actual_routes_file1, routes_to_sort_file1, limit_actual_routes1, limit_routes_to_sort1, driver_id):
         #load data and limit it as required
         
@@ -805,11 +816,13 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
             if route["driver"]==driver_id:
                 driver_data1.append(route)
 
-        #if a limit on total routes is set, apply it
-        if limit_actual_routes1!=0:
-            driver_data1=driver_data1[:limit_actual_routes1]
+        #if a limit on total routes is set apply it and take random samples out of the data to make sure it has similar 'diversity'
         if limit_routes_to_sort1!=0:
-            rank_routes1=rank_routes1[:limit_routes_to_sort1]
+            rank_routes1=sample(len(rank_routes1), limit_routes_to_sort1, rank_routes1)
+        if limit_actual_routes1!=0:
+            driver_data1=sample(len(driver_data1), limit_actual_routes1, driver_data1)
+            
+        
         
         return driver_data1, rank_routes1
 
@@ -827,9 +840,10 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
                     driver_data.append(route)
             driver_data1=driver_data
 
-        #if a limit on total routes is set apply it
+        #if a limit on total routes is set apply it and take random samples out of the data to make sure it has similar 'diversity'
         if limit_actual_routes1!=0:
-            driver_data1=driver_data1[:limit_actual_routes1]
+            driver_data1=sample(len(driver_data1), limit_actual_routes1, driver_data1)
+            
         return driver_data1
 
     #this function has a small feature where you can say that the routes to be ranked can be given as a variable instead of a filelocation (for function3)
