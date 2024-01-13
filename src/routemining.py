@@ -201,9 +201,9 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                 distances=list(kmeans1.transform(oneclusterdata))
                 mindistancepoint=oneclusterdata[distances.index(min(distances))]
                 point=(list(mindistancepoint))
-                temp["centroid"]=round_list(scaler.inverse_transform([point])[0])
+                temp["repr"]=round_list(scaler.inverse_transform([point])[0])
 
-                #temp["centroid"]=tuple(round_list(scaler.inverse_transform(kmeans.cluster_centers_)[i])) #the real centroid
+                temp["centroid"]=tuple(round_list(scaler.inverse_transform(kmeans.cluster_centers_)[i])) #the real centroid
                 
                 clusterinfo[city+"-"+str(i)]=temp
         
@@ -497,7 +497,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
                     
                     #We find the merchandise values of the cluster "Milano-Trento-0"
                     
-                    info=clusterinfo[x]['centroid']
+                    info=clusterinfo[x]['repr']
                     
                     #We find the products which are delivered in the cluster, and then assign to each product its value 
                     #in info.
