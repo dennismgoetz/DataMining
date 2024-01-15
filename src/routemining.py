@@ -41,7 +41,7 @@ def findroutes(filename, limit_data=0, driver_id=0, prints=False):
 
         #if a limit on total routes is set apply it and take random samples out of the data to make sure it has similar 'diversity'
         if limit_actual_routes1!=0:
-            driver_data1=sample(len(driver_data1), limit_actual_routes1, driver_data1)
+            driver_data1=sample(len(driver_data1), min(limit_actual_routes1, len(driver_data1)), driver_data1)
         return driver_data1
 
     def find_numb_dim_and_conn(data):
@@ -818,9 +818,9 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
 
         #if a limit on total routes is set apply it and take random samples out of the data to make sure it has similar 'diversity'
         if limit_routes_to_sort1!=0:
-            rank_routes1=sample(len(rank_routes1), limit_routes_to_sort1, rank_routes1)
+            rank_routes1=sample(len(rank_routes1), min(limit_routes_to_sort1, len(rank_routes1)), rank_routes1)
         if limit_actual_routes1!=0:
-            driver_data1=sample(len(driver_data1), limit_actual_routes1, driver_data1)
+            driver_data1=sample(len(driver_data1), min(limit_actual_routes1, len(driver_data1)), driver_data1)
             
         
         
@@ -842,7 +842,7 @@ def rankroutes(actual_routes_file, routes_to_sort_file, driver_id, limit_actual_
 
         #if a limit on total routes is set apply it and take random samples out of the data to make sure it has similar 'diversity'
         if limit_actual_routes1!=0:
-            driver_data1=sample(len(driver_data1), limit_actual_routes1, driver_data1)
+            driver_data1=sample(len(driver_data1), min(limit_actual_routes1, len(driver_data1)), driver_data1)
             
         return driver_data1
 
