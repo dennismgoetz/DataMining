@@ -50,8 +50,8 @@ filename_actual is the directory of the JSON file with the actual routes in it.
 filename_sort is the directory of the JSON file with the routes in it that need to be sorted. (only required for task 2)
 destination_file is the location where the produced file should be stored
 
-#### Variable explanations:
-```tasknumber``` is the required task to be solved.<br>
+#### Variables:
+```tasknumber``` is the required task to be solved.
 - Task 1 is generating a file with new standard routes.<br>
 - Task 2 is sorting routes that are in filename_sort based on filename_actual for every driver.<br>
 - Task 3 is gnerating a file with the perfect route for every driver
